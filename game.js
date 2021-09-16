@@ -66,7 +66,7 @@ for (let i=0;i<=100;i++)
 // let poles move
 for (let i=0;i<=100;i++)  a[i].x-=3;
 if (a[tracerFront].x < bird.x-50) { ++tracerFront; ++score;}
-bird.y+=2;
+bird.y+=3;
 //Display player's score
 context.font = "30px Arial";
 context.fillStyle = "violet";
@@ -109,5 +109,5 @@ function AgainGame()
 window.onclick= function()
 {
     if (check)
-    bird.y-=50;
+    bird.y-=100;
 }
