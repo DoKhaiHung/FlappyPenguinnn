@@ -79,13 +79,13 @@ if (!checkLose())   isFinish=true;
      check=false;
      cancelAnimationFrame(ProcessGame);
          if (highestScore < score) highestScore=score;
-         if (window.confirm(` Your score in this turn is ${score}           
+      setTimeout(()=>{if (window.confirm(` Your score in this turn is ${score}           
          DO YOU WANT PLAY AGAIN?
          Click OK to try again
                Cancel to see highest score
           `))
         AgainGame();
-        else  alert(` Your highest score is ${highestScore} `);       
+        else  alert(` Your highest score is ${highestScore} `); },200);     
         //  erase.innerHTML=` DO YOU WANT PLAY AGAIN?
         //  <button id="try" onclick="AgainGame()">
         //     TRY AGAIN
